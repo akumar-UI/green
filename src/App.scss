@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$green: #2faf5f;
+$bg: #fafafa;
+$gray: rgb(224, 224, 224);
+$darkGray: #4d494b;
+$lightGray: #b2afb1;
+$midGray: #737071;
+
+@font-face {
+  font-family: "gotham";
+  src: url("./gotham.otf") format("opentype");
+  font-weight: normal;
+}
+
+.App {
+  font-family: "gotham";
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: $bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__loginBox {
+    width: 100%;
+    max-width: 30rem;
+    background-color: #fff;
+    padding: 3.5rem 2.8rem;
+    box-shadow: 0px 0px 10px rgb(236, 236, 236);
+    border-radius: 7px;
+
+    &__logo {
+      max-width: 9rem;
+    }
+
+    &__title {
+      margin: 1.6rem 0 3.5rem 0;
+      h1 {
+        font-weight: 900;
+        font-weight: bolder;
+        color: $darkGray;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: $lightGray;
+      }
+    }
+    &__form {
+      &__lableEmail {
+        display: block;
+        width: 100%;
+        color: $midGray;
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+      }
+      &__inputEmail {
+        display: block;
+        width: 100%;
+        padding: 0.8rem;
+        outline: none;
+        border: 1px solid $gray;
+        border-radius: 0.3rem;
+        font-size: 1.3rem;
+        color: $darkGray;
+        font-family: "gotham";
+        transition: all 0.3s ease;
+
+        &:focus {
+          background-color: $gray;
+        }
+      }
+
+      // Custom checkbox
+
+      &__check {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        //  background-color: rgb(112, 16, 16);
+        padding: 3px;
+
+        input {
+          display: none;
+        }
+        label {
+          margin-left: 1.9rem;
+          cursor: pointer;
+          color: $midGray;
+          font-size: 0.8rem;
+        }
+        label::before {
+          content: "";
+          background: url("./check.svg");
+          background-size: contain;
+          background-color: #36a9e0;
+          width: 19px;
+          height: 19px;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          border-radius: 0.3rem;
+          transform: scale(0);
+          transition: all 0.3s ease;
+          z-index: 100;
+        }
+        input:checked + label::before {
+          transform: scale(1);
+        }
+        label::after {
+          content: "";
+          border: 1px solid $gray;
+          width: 17px;
+          height: 17px;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          border-radius: 0.3rem;
+          z-index: 0;
+        }
+      }
+
+      //
+
+      &__btn {
+        font-size: 1rem;
+        border: 1px solid $gray;
+        background-color: #fff;
+        color: $darkGray;
+        border-radius: 0.4rem;
+        margin-top: 3.5rem;
+        font-family: "gotham";
+        display: block;
+        padding: 0.8rem 1.8rem;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background-color: $green;
+          transform: translateY(-6px);
+          box-shadow: 2px 8px 7px $gray;
+          color: white;
+        }
+      }
+    }
+  }
+}
