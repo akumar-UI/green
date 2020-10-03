@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/green/static/css/main.44d6aae7.chunk.css",
+    "main.js": "/green/static/js/main.603d88c2.chunk.js",
+    "main.js.map": "/green/static/js/main.603d88c2.chunk.js.map",
+    "runtime-main.js": "/green/static/js/runtime-main.2f1407ab.js",
+    "runtime-main.js.map": "/green/static/js/runtime-main.2f1407ab.js.map",
+    "static/js/2.3c328da7.chunk.js": "/green/static/js/2.3c328da7.chunk.js",
+    "static/js/2.3c328da7.chunk.js.map": "/green/static/js/2.3c328da7.chunk.js.map",
+    "index.html": "/green/index.html",
+    "precache-manifest.297a24cf89ff6b6d0abe34c75ede87e8.js": "/green/precache-manifest.297a24cf89ff6b6d0abe34c75ede87e8.js",
+    "service-worker.js": "/green/service-worker.js",
+    "static/css/main.44d6aae7.chunk.css.map": "/green/static/css/main.44d6aae7.chunk.css.map",
+    "static/js/2.3c328da7.chunk.js.LICENSE.txt": "/green/static/js/2.3c328da7.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/green/static/media/gotham.a563635d.otf",
+    "static/media/logo.svg": "/green/static/media/logo.9da97edd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f1407ab.js",
+    "static/js/2.3c328da7.chunk.js",
+    "static/css/main.44d6aae7.chunk.css",
+    "static/js/main.603d88c2.chunk.js"
+  ]
+}
