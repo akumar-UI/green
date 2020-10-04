@@ -42,7 +42,6 @@ $midGray: #737071;
     &__title {
       margin: 1.6rem 0 3.5rem 0;
       h1 {
-        font-weight: 900;
         font-weight: bolder;
         color: $darkGray;
         margin-bottom: 0.5rem;
@@ -60,6 +59,9 @@ $midGray: #737071;
         margin-bottom: 0.7rem;
       }
       &__inputEmail {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         display: block;
         width: 100%;
         padding: 0.8rem;
